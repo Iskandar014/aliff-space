@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        /* Section styling */
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Gallery styling */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery-container img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#biodata">Biodata</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#family">Family</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
+    <!-- Biodata Section -->
+    <section id="biodata">
+        <h2>Biodata</h2>
+        <p>Include your biodata details here, like name, age, and background.</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Job Title 1 – Company Name (Years)</li>
+            <li>Job Title 2 – Company Name (Years)</li>
+            <li>...additional experience...</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Degree – University/School (Year)</li>
+            <li>Degree – University/School (Year)</li>
+        </ul>
+    </section>
+
+    <!-- Family Section -->
+    <section id="family">
+        <h2>Family</h2>
+        <p>Information about your family members goes here.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+</body>
+</html>
