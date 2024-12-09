@@ -16,7 +16,8 @@
         /* Background image styling */
         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
             height: 100vh;
             background: url('backgroundisk.jpg') no-repeat center center/cover;
@@ -26,12 +27,13 @@
         /* Main container styling */
         .container {
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+            background-color: rgba(255, 255, 255, 0.85);
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             width: 90%;
             max-width: 600px;
+            margin-top: 20px;
         }
 
         .container h1 {
@@ -43,7 +45,7 @@
         .container p {
             font-size: 18px;
             color: #555;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             line-height: 1.6;
         }
 
@@ -64,6 +66,86 @@
             background-color: #357ABD;
             transform: translateY(-3px);
         }
+
+        /* GIF container styling */
+        .gif-container {
+            margin: 15px auto;
+        }
+
+        .gif-container img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Us Section */
+        .contact-section {
+            margin-top: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .contact-section h2 {
+            font-size: 24px;
+            color: #4a90e2;
+            margin-bottom: 15px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: #555;
+            font-size: 18px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #4a90e2;
+            transform: translateY(-3px);
+        }
+
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 8px;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+            font-size: 14px;
+            margin-bottom: 10px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        footer a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -71,14 +153,40 @@
     <div class="container">
         <h1>Welcome to My Homepage</h1>
         <p>Explore my biodata, education, and experiences. Click on each section to learn more about me.</p>
-        
+
+        <!-- GIF Display -->
+        <div class="gif-container">
+            <img src="car.gif" alt="Welcome GIF">
+        </div>
+
         <!-- Link buttons to each section -->
-        <a href="biodata.html" class="link-btn" >Biodata</a>
-        <a href="experience.html" class="link-btn" >Experience</a>
-        <a href="education.html" class="link-btn" >Education</a>
-        <a href="family.html" class="link-btn" >Family</a>
-        <a href="gallery.html" class="link-btn" >Gallery</a>
+        <a href="biodata.html" class="link-btn">Biodata</a>
+        <a href="experience.html" class="link-btn">Experience</a>
+        <a href="education.html" class="link-btn">Education</a>
+        <a href="family.html" class="link-btn">Family</a>
+        <a href="gallery.html" class="link-btn">Gallery</a>
     </div>
+
+    <!-- Contact Us Section -->
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="social-links">
+            <a href="https://instagram.com/Iskandarr_aliff" target="_blank">
+                <img src="ig.jpg" alt="Instagram Logo"> Instagram
+            </a>
+            <a href="https://wa.me/01128397079" target="_blank">
+                <img src="wassap.jpg" alt="WhatsApp Logo"> WhatsApp
+            </a>
+            <a href="https://tiktok.com/@noturhero1" target="_blank">
+                <img src="tt.jpg" alt="TikTok Logo"> TikTok
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        © 2024 My Homepage. All rights reserved. | Design by <a href="#">Muhammad Iskandar Aliff</a>
+    </footer>
 
 </body>
 </html>
